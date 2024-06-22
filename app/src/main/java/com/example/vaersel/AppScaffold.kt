@@ -358,7 +358,7 @@ fun AppScaffold(
                     "hourly/{id}", arguments = listOf(navArgument("id") {type = NavType.IntType}),
                     exitTransition = { ExitTransition.None}
                 ) {
-                    HourlyScreen(homeScreenViewModel = homeScreenViewModel, innerPadding, it.arguments?.getInt("id"))
+                    HourlyScreen(homeScreenViewModel = homeScreenViewModel, settingsScreenViewModel, innerPadding, it.arguments?.getInt("id"))
                 }
 
                 composable(

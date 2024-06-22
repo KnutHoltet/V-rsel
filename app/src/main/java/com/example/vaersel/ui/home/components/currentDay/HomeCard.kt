@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.vaersel.ui.home.HourlyWeatherUiState
@@ -34,7 +35,7 @@ fun HomeCard(weatherForTheNextHoursUiState: HourlyWeatherUiState, locationWeathe
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            HourlyTodayCard(weatherEntries)
+            HourlyTodayCard(weatherEntries, settingsScreenViewModel.isDarkMode.collectAsState().value)
 
             Spacer(modifier = Modifier.height(16.dp))
 

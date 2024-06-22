@@ -24,7 +24,8 @@ import kotlin.math.roundToInt
 
 @Composable
 fun HourlyTodayCard(
-    liste: List<TimeSeriesEntry>
+    liste: List<TimeSeriesEntry>,
+    isDarkMode: Boolean
 ) {
     Card(
         modifier = Modifier
@@ -63,7 +64,7 @@ fun HourlyTodayCard(
 
                             )
 
-                            val symbol = if(isSystemInDarkTheme()) {
+                            val symbol = if(isDarkMode) {
                                 weatherIcons(timeSeriesEntry.data.next_1_hours.summary.symbol_code + "_dark")
 
                             } else {
