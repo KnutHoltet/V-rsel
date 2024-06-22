@@ -31,10 +31,11 @@ import com.example.vaersel.data.weather.icons.weatherIcons
 import com.example.vaersel.ui.home.HomeScreenViewModel
 import com.example.vaersel.ui.home.WeekForecastUiState
 import com.example.vaersel.ui.logic.getDateString
+import com.example.vaersel.ui.settings.SettingsScreenViewModel
 import kotlin.math.roundToInt
 
 @Composable
-fun HourlyScreen(homeScreenViewModel: HomeScreenViewModel, innerpadding: PaddingValues, id: Int?) {
+fun HourlyScreen(homeScreenViewModel: HomeScreenViewModel, settingsScreenViewModel: SettingsScreenViewModel, innerpadding: PaddingValues, id: Int?) {
 
     // as detailed info as availible for the next week
     val weatherNextDaysUiState by homeScreenViewModel.weatherNextDaysUiState.collectAsState()
@@ -115,14 +116,13 @@ fun HourlyScreen(homeScreenViewModel: HomeScreenViewModel, innerpadding: Padding
                         Spacer(modifier = Modifier.width(60.dp))
 
                         // shows weather icon
-                        val symbol = if(isSystemInDarkTheme()) {
+                        val symbol = if(settingsScreenViewModel.isDarkMode.collectAsState().value) {
 
-                            if(timeSeriesEntry.data.next_1_hours.summary.symbol_code.isNotEmpty()) {
-                                weatherIcons(timeSeriesEntry.data.next_1_hours.summary.symbol_code + "_dark")
-
-                            } else{
-                                weatherIcons(timeSeriesEntry.data.next_6_hours.summary.symbol_code + "_dark")
-                            }
+                            @Suppress("UNNECESSARY_SAFE_CALL", "USELESS_ELVIS")
+                            weatherIcons(
+                                (timeSeriesEntry.data.next_1_hours?.summary?.symbol_code + "_dark")
+                                    ?: (timeSeriesEntry.data.next_6_hours.summary.symbol_code + "_dark")
+                            )
 
                         } else {
                             @Suppress("UNNECESSARY_SAFE_CALL")

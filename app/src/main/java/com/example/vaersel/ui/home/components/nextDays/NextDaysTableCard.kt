@@ -124,7 +124,7 @@ fun TableDayCard(
 
 
 
-                                val symbol = if(isSystemInDarkTheme()) {
+                                val symbol = if(settingsScreenViewModel.isDarkMode.collectAsState().value) {
                                     weatherIcons(timeSeriesEntry.data.next_6_hours.summary.symbol_code + "_dark")
                                 } else {
                                     weatherIcons(timeSeriesEntry.data.next_6_hours.summary.symbol_code)
