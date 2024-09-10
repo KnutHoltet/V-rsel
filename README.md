@@ -1,14 +1,25 @@
 # Værsel 
-<img align="center" src="https://media.github.uio.no/user/9669/files/3e8e1f80-55dc-47d7-b6d7-9fe3dfde356f">
+<img align="center" src="/bilder/logo/SelVær_v4_blå_alternative.png" width="250" height="250">
+
+## License / Lisens
+**English**
+- The code in this repository is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for details.
+- The assets in the `/assets` folder are not licensed for free use. Please refer to [LICENSE-Assets.md](./LICENSE-Assets.md) for details on asset usage.
+
+**Norwegian**
+- Koden i dette repositoriet er lisensiert under MIT-lisensen. Se [LICENSE](./LICENSE.md) filen for detaljer.
+- Eiendelene i `/bilder`-mappen og/eller andre mapper er ikke lisensiert for fri bruk. Vennligst se [LICENSE-Assets.md](./LICENSE-Assets.md) for detaljer om bruken av eiendelene.
+
 
 ## Om prosjektet!
 En enkel intuitiv android vær-applikasjon for barn mellom ni til fjorten!
+
 
 Et prosjekt av 
 - Birk Bergerud-Nygård (birkb@uio.no)
 - Jeenu Mahadevan (jeenum@uio.no)
 - An Vo (anvo@uio.no)
-- Knut Holtet(knuho@uio.no)
+- Knut Holtet(knutholtet@live.no)
 - Zehra Tien Ayden (zehrata@uio.no)
 - Jannina Veluppillai (janninav@uio.no)
 
@@ -18,7 +29,7 @@ Diverse informasjon om bibloteker som er brukt ligger i `DOCUMENTATION.md`.
 Applikasjonens arkitektur og diverse forklaringer om MVVM er beskrevet i `ARCHITECTURE.md` og diagrammer som visuelt beskriver løsningen finnes i `MODELING.md`
 
 ## Setup
-![Minimum required Gradle version](https://developer.android.com/build/releases/gradle-plugin#updating-gradle) er 8.2. 
+[Minimum required Gradle version](https://developer.android.com/build/releases/gradle-plugin#updating-gradle) er 8.2. 
 
 API-nivået er optimalisert for 34 men krever et minimum nivå på 26.
 
@@ -40,3 +51,7 @@ For å kjøre applikasjonen, klon repoet og åpne prosjektet i Android Studio.
 `git clone https://github.uio.no/IN2000-V24/team-6.git`
 
 Deretter velg android enhet (enten emulator eller fysisk) og se vær magien!
+
+
+## Bilder av app
+Ligger under `bilder/app_screenshots/`
