@@ -4,7 +4,7 @@
 ## License / Lisens
 **English**
 - The code in this repository is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for details.
-- The assets in the `/assets` folder are not licensed for free use. Please refer to [LICENSE-Assets.md](./LICENSE-Assets.md) for details on asset usage.
+- The assets in the `/bilder` folder are not licensed for free use. Please refer to [LICENSE-Assets.md](./LICENSE-Assets.md) for details on asset usage.
 
 **Norwegian**
 - Koden i dette repositoriet er lisensiert under MIT-lisensen. Se [LICENSE](./LICENSE.md) filen for detaljer.
