@@ -20,7 +20,7 @@ Et prosjekt av
 - Jeenu Mahadevan (jeenum@uio.no)
 - An Vo (anvo@uio.no)
 - Knut Holtet(knutholtet@live.no)
-- Zehra Tien Ayden (zehrata@uio.no)
+- Zehra Tien Ayden (zehratieen@gmail.com)
 - Jannina Veluppillai (janninav@uio.no)
 
 ---
