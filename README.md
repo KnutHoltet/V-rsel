@@ -48,7 +48,7 @@ Dersom du får opp `Sync Android SDKs` for SDK pathen kan du bare trykke OK.
 
 For å kjøre applikasjonen, klon repoet og åpne prosjektet i Android Studio.
 
-`git clone https://github.uio.no/IN2000-V24/team-6.git`
+`git clone https://github.com/KnutHoltet/V-rsel.git`
 
 Deretter velg android enhet (enten emulator eller fysisk) og se vær magien!
 
