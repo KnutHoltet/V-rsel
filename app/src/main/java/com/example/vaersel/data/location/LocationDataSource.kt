@@ -1,6 +1,6 @@
 package com.example.vaersel.data.location
 
-import com.example.vaersel.data.apikeys.proxykey
+//import com.example.vaersel.data.apikeys.proxykey
 import com.example.vaersel.model.LocationInfo
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -15,10 +15,12 @@ import io.ktor.util.appendIfNameAbsent
 class LocationDataSource {
     private val url = "https://api.met.no/weatherapi/airqualityforecast/0.1/?"
     private val client = HttpClient(CIO) {
+        /*
         defaultRequest {
             url("https://gw-uio.intark.uh-it.no/in2000/")
             headers.appendIfNameAbsent("X-Gravitee-API-Key", proxykey)
         }
+        */
         install(ContentNegotiation) {
             gson()
         }
